@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { CacheProvider } from '@emotion/react';
 import { ThemeProvider, CssBaseline } from '@mui/material';
 
-import createEmotionCache from '../utility/createEmotionCache';
-import darkTheme from '../styles/theme/darkTheme';
-import '../styles/globals.css';
+import createEmotionCache from '@/utility/createEmotionCache';
+import darkTheme from '@/styles/theme/darkTheme';
+import '@/styles/globals.css';
 
 const clientSideEmotionCache = createEmotionCache();
 
