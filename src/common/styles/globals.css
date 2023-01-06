@@ -74,6 +74,14 @@ a {
   text-decoration: none;
 }
 
+.MuiButton-root {
+  min-width: unset;
+}
+
+.hg-theme-default {
+  color: black;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

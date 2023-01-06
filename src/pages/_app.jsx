@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { CacheProvider } from '@emotion/react';
-import { ThemeProvider, CssBaseline } from '@mui/material';
+import { CssBaseline } from '@mui/material';
 import { Provider } from 'react-redux';
 import store from 'src/redux/store';
 
 import createEmotionCache from '@/utility/createEmotionCache';
-import darkTheme from '@/styles/theme/darkTheme';
+import ThemeProvider from '@/styles/theme';
 import '@/styles/globals.css';
 import MainLayout from '@/components/layout/MainLayout';
 
@@ -19,8 +19,7 @@ const MyApp = (props) => {
   return (
     <Provider store={store}>
       <CacheProvider value={emotionCache}>
-        <ThemeProvider theme={darkTheme}>
-          <CssBaseline />
+        <ThemeProvider>
           {getLayout(
             <MainLayout>
               <Component {...pageProps} />
