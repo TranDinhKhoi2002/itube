@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { CacheProvider } from '@emotion/react';
-import { CssBaseline } from '@mui/material';
 import { Provider } from 'react-redux';
 import store from 'src/redux/store';
+import 'regenerator-runtime/runtime';
 
 import createEmotionCache from '@/utility/createEmotionCache';
 import ThemeProvider from '@/styles/theme';
