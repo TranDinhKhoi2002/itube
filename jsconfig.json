@@ -5,7 +5,8 @@
       "@/components/*": ["src/common/components/*"],
       "@/styles/*": ["src/common/styles/*"],
       "@/utility/*": ["src/common/utility/*"],
-      "@/modules/*": ["src/modules/*"]
+      "@/modules/*": ["src/modules/*"],
+      "@/hooks/*": ["src/hooks/*"]
     }
   }
 }

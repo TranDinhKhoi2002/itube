@@ -8,7 +8,7 @@ import 'regenerator-runtime/runtime';
 import createEmotionCache from '@/utility/createEmotionCache';
 import ThemeProvider from '@/styles/theme';
 import '@/styles/globals.css';
-import MainLayout from '@/components/layout/MainLayout';
+import MainLayout from '@/components/Layout/MainLayout';
 
 const clientSideEmotionCache = createEmotionCache();
 

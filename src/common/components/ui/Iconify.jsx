@@ -12,5 +12,5 @@ Iconify.propTypes = {
 export default function Iconify({ icon, sx, ...other }) {
   const theme = useTheme();
 
-  return <Box component={Icon} icon={icon} sx={{ color: theme.palette.primary.main, ...sx }} {...other} />;
+  return <Box component={Icon} icon={icon} sx={{ color: 'white', ...sx }} {...other} />;
 }

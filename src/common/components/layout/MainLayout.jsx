@@ -1,10 +1,20 @@
 import { Box } from '@mui/material';
-import Header from '../header/Header';
+import Header from '../Header/Header';
+import Sidebar from '../Sidebar/Sidebar';
 
 export default function MainLayout({ children }) {
   return (
-    <Box sx={{ paddingX: 4, paddingY: 1 }}>
+    <Box
+      sx={{
+        paddingX: {
+          xs: '8px',
+          md: '16px',
+        },
+        paddingY: 1,
+      }}
+    >
       <Header />
+      {/* <Sidebar /> */}
       {children}
     </Box>
   );
